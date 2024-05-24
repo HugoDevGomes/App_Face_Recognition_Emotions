@@ -38,7 +38,7 @@ Este projeto é uma aplicação de reconhecimento facial e análise de emoções
 
 1. Clone o repositório:
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/HugoDevGomes/App_Face_Recognition_Emotions)
+    git clone https://github.com/HugoDevGomes/App_Face_Recognition_Emotions
     cd seu-repositorio
     ```
 
