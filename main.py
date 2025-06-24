@@ -3,7 +3,6 @@ import datetime
 import subprocess
 import cv2
 import numpy as np
-import self as self
 from kivy.app import App
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
@@ -138,6 +137,7 @@ class FaceRecognitionApp(App):
         if name in ['unknown_person', 'no_persons_found']:
             popup = Popup(title='Ops...', content=Label(text='Unknown user. Please register new user or try again.'), size_hint=(None, None), size=(400, 400))
             popup.open()
+            os.remove(unknown_img_path)
         else:
             popup = Popup(title='Welcome back!', content=Label(text=f'Welcome, {name}'), size_hint=(None, None), size=(400, 400))
             popup.open()
